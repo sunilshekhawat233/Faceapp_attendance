@@ -1,0 +1,134 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Attendance</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <h2>Upload Image to Mark Attendance</h2>
+  <form action="/detect" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" required>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html> -->
+
+<!-- 
+<html>
+<head>
+  <title>Smart Attendance</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    input[type="file"],
+    button {
+      margin: 10px;
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #0078D7;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005ea6;
+    }
+  </style>
+</head>
+<body>
+  <h2>Upload Image to Mark Attendance</h2>
+  <form action="/detect" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" required><br>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Attendance System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Smart Attendance System</h1>
+    <p>Choose an option to mark attendance</p>
+
+    <!-- File Upload --
+    <form action="/detect" method="post" enctype="multipart/form-data">
+      <input type="file" name="image" accept="image/*"><br>
+      <button type="submit">Upload & Mark Attendance</button>
+    </form>
+
+    <hr>
+
+    <!-- Live Webcam Capture --
+    <video id="video" autoplay playsinline></video>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <br>
+    <button id="captureBtn">Capture from Webcam</button>
+
+    <form id="webcamForm" action="/detect" method="post" enctype="multipart/form-data" style="display:none;">
+      <input type="hidden" name="webcam_image" id="webcamImageInput">
+      <button type="submit">Submit Webcam Image</button>
+    </form>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Attendance System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Smart Attendance System</h1>
+    <p>Choose an option to mark attendance</p>
+
+    <!-- Upload Section -->
+    <form action="/detect" method="post" enctype="multipart/form-data">
+      <input type="file" name="image" accept="image/*">
+      <button type="submit" class="primary-btn">Upload & Mark Attendance</button>
+    </form>
+
+    <hr>
+
+    <!-- Webcam Section -->
+    <video id="video" autoplay playsinline></video>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <button id="captureBtn" class="secondary-btn">Capture from Webcam</button>
+
+    <form id="webcamForm" action="/detect" method="post" enctype="multipart/form-data" style="display:none;">
+      <input type="hidden" name="webcam_image" id="webcamImageInput">
+      <button type="submit" class="secondary-btn outline">Submit Webcam Image</button>
+    </form>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
